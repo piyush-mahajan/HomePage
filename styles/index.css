@@ -366,6 +366,18 @@ button.contact-btn:hover .glow::before {
   }
 }
 
+.heroBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin-top: 1em;
+  height: 100vh;
+  /* border: 1px solid white; */
+  z-index: 999999;
+  overflow: hidden;
+}
+
 canvas#particleCanvas {
   position: absolute;
   pointer-events: none;
@@ -982,4 +994,366 @@ p {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* prize */
+  .prizeBox{
+    background: #121521;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    /* margin-top: 1em; */
+    position: relative;
+    min-height: 50vh;
+    /* border: 1px solid white; */
+    z-index: 999999;
+    width: 100%;
+    color: white;
+  }
+
+.prizeBox .prizeBoxContent{
+  display: flex;
+  gap: 15px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  /* margin-top: 1em; */
+  padding: 1em;
+}
+.prizeBox .prizeBoxContent p{
+  font-size: 1.5em;
+  margin-top: -150px !important;
+  color: #d8ecf8;
+  text-shadow: 0 2px 16px rgba(174, 207, 242, 0.24);
+  background: linear-gradient(0deg, #d8ecf8 0, #98c0ef 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.prizeBox .prizeBoxContent p:nth-child(2){
+  font-size: 9.5em;
+  margin-top: -150px !important;
+  color: #d8ecf8;
+  text-shadow: 0 2px 16px rgba(174, 207, 242, 0.24);
+  background: linear-gradient(0deg, #d8ecf8 0, #98c0ef 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* prizeBox mediaquires */
+@media (max-width: 768px){
+  .prizeBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    /* margin-top: 1em; */
+    position: relative;
+    min-height: 15vh;
+  }
+  .prizeBox .prizeBoxContent p{
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .prizeBox .prizeBoxContent p:nth-child(2){
+    font-size: 5em;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.scheduleBox{
+  background: #121521;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+  /* margin-top: 1em; */
+  position: relative;
+  min-height: 50vh;
+  /* border: 1px solid white; */
+  z-index: 999999;
+  width: 100%;
+  color: white;
+}
+.scheduleBox img{
+  width: 20%;
+  /* height: 20%; */
+  margin-top: 1em;
+
+}
+
+.scheduleBox h1{
+  font-size: 7.5em;
+  color: #d8ecf8;
+  text-shadow: 0 2px 16px rgba(174, 207, 242, 0.24);
+  background: linear-gradient(0deg, #d8ecf8 0, #98c0ef 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.scheduleBox .scheduleBoxContent{
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  /* flex-direction: column; */
+  /* margin-top: 1em; */
+  padding: 1em;
+}
+.scheduleBox .scheduleBoxContent .dateBox{
+  border: 1px solid #d8ecf8;
+  padding: 1em;
+  border-radius: 10px;
+  width: auto;
+  min-width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.scheduleBox .scheduleBoxContent .dateBox h2{
+  font-size: 2em;
+  color: #d8ecf8;
+  text-shadow: 0 2px 16px rgba(174, 207, 242, 0.24);
+  background: linear-gradient(0deg, #d8ecf8 0, #98c0ef 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.scheduleBox .scheduleBoxContent .dateBox p{
+  font-size: 1.5em;
+  color: #d8ecf8;
+  text-shadow: 0 2px 16px rgba(174, 207, 242, 0.24);
+  background: linear-gradient(0deg, #d8ecf8 0, #98c0ef 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+}
+
+/* mediaquires scheduleBox */
+@media (max-width: 768px){
+  .scheduleBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    /* margin-top: 1em; */
+    position: relative;
+    min-height: 15vh;
+  }
+  .scheduleBox img{
+    width: 20%;
+    /* height: 20%; */
+    margin-top: 1em;
+  }
+  
+  .scheduleBox h1{
+    font-size: 5em;
+    color: #d8ecf8;
+    text-shadow: 0 2px 16px rgba(174, 207, 242, 0.24);
+    background: linear-gradient(0deg, #d8ecf8 0, #98c0ef 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .scheduleBox .scheduleBoxContent{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-direction: column; */
+    /* margin-top: 1em; */
+    padding: 1em;
+  }
+  .scheduleBox .scheduleBoxContent .dateBox{
+    border: 1px solid #d8ecf8;
+    padding: 1em;
+    border-radius: 10px;
+    width: auto;
+    min-width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .scheduleBox .scheduleBoxContent .dateBox h2{
+    font-size: 1.5em;
+    color: #d8ecf8;
+    text-shadow: 0 2px 16px rgba(174, 207, 242, 0.24);
+    background: linear-gradient(0deg, #d8ecf8 0, #98c0ef 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .scheduleBox .scheduleBoxContent .dateBox p{
+    font-size: 1em;
+    color: #d8ecf8;
+    text-shadow: 0 2px 16px rgba(174, 207, 242, 0.24);
+    background: linear-gradient(0deg, #d8ecf8 0, #98c0ef 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+  }
+}
+
+/* speakers */
+
+.speakersBox{
+  background: #121521;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+  /* margin-top: 1em; */
+  position: relative;
+  min-height: 50vh;
+  /* border: 1px solid white; */
+  z-index: 999999;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.speakersBox h1{
+  font-size: 7.5em;
+  color: #d8ecf8;
+  text-shadow: 0 2px 16px rgba(174, 207, 242, 0.24);
+  background: linear-gradient(0deg, #d8ecf8 0, #98c0ef 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.speakersBox .speakersBoxContent{
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  /* flex-direction: column; */
+  /* margin-top: 1em; */
+  padding: 1em;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.speakersBox .speakersBoxContent .speaker{
+  /* border: 1px solid #d8ecf8; */
+  padding: 1em;
+  border-radius: 10px;
+  width: auto;
+  min-width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+  box-shadow: -1em -0.2em 0.4em -1.1em #c2ccff, inset 0em 0em 0em 2px #c2ccff,
+    inset 0.2em 0.3em 0.2em -0.2em #c2ccff,
+    inset 10.2em 10.3em 2em -10em #d4e6ff2f;
+}
+
+.speakersBox .speakersBoxContent .speaker img{
+  width: 350px;
+  border-radius: 10px;
+}
+
+.speakersBox .speakersBoxContent .speaker h2{
+  font-size: 2em;
+  color: #d8ecf8;
+  text-shadow: 0 2px 16px rgba(174, 207, 242, 0.24);
+  background: linear-gradient(0deg, #d8ecf8 0, #98c0ef 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* media quires speakersBox */
+@media (max-width: 768px){
+  .speakersBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    /* margin-top: 1em; */
+    position: relative;
+    min-height: 15vh;
+    text-align: center;
+  }
+  
+  .speakersBox h1{
+    font-size: 5em;
+    color: #d8ecf8;
+    text-shadow: 0 2px 16px rgba(174, 207, 242, 0.24);
+    background: linear-gradient(0deg, #d8ecf8 0, #98c0ef 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+  
+  .speakersBox .speakersBoxContent{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-direction: column; */
+    /* margin-top: 1em; */
+    padding: 1em;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+  
+  .speakersBox .speakersBoxContent .speaker{
+    /* border: 1px solid #d8ecf8; */
+    padding: 1em;
+    border-radius: 10px;
+    width: auto;
+    min-width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    box-shadow: -1em -0.2em 0.4em -1.1em #c2ccff, inset 0em 0em 0em 2px #c2ccff,
+      inset 0.2em 0.3em 0.2em -0.2em #c2ccff,
+      inset 10.2em 10.3em 2em -10em #d4e6ff2f;
+  }
+  
+  .speakersBox .speakersBoxContent .speaker img{
+    width: 200px;
+    border-radius: 10px;
+  }
+  
+  .speakersBox .speakersBoxContent .speaker h2{
+    font-size: 1.5em;
+    color: #d8ecf8;
+    text-shadow: 0 2px 16px rgba(174, 207, 242, 0.24);
+    background: linear-gradient(0deg, #d8ecf8 0, #98c0ef 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
