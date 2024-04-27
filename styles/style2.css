@@ -1,0 +1,13 @@
+.navbar-brand img{
+    width: 250px !important; 
+    /* height: 150px !important; */
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.footer-logo img{
+    width: 250px !important; 
+    /* height: 150px !important; */
+    border-radius: 50%;
+    margin-right: 10px;
+}
