@@ -11,3 +11,20 @@
     border-radius: 50%;
     margin-right: 10px;
 }
+
+/* responsive ness */
+@media (max-width: 768px) {
+    .navbar-brand img{
+        width: 150px !important; 
+        /* height: 150px !important; */
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .footer-logo img{
+        width: 150px !important; 
+        /* height: 150px !important; */
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+}
