@@ -15,7 +15,7 @@
 /* responsive ness */
 @media (max-width: 768px) {
     .navbar-brand img{
-        width: 150px !important; 
+        width: 130px !important; 
         margin-right: 10px;
     }
 
